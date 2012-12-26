@@ -17,7 +17,7 @@ algorithm. Mergesort was chosen because it is near-optimal in the number of
 comparisons required; as the user is performing comparisons manually, it was
 reasonable to assume that the cost of comparisons dominates all other costs.
 Other computations and memory usage were considered to be irrelevant in
-comparison (hence, a na|iuml|ve, recursive implementation was sufficient).
+comparison (hence, a naive, recursive implementation was sufficient).
 
 Mergesort is not nearly as robust to "mistakes" as other, tournament-style
 algorithms. Matches decided early on tend to have a disproportional effect
@@ -31,5 +31,3 @@ The code in ``sort.py`` and ``main.py`` is hereby released into the public
 domain, and may be used, modified, and redistributed by anyone for any
 purpose. ``getch.py`` is included under the terms of the Python Software
 Foundation (PSF) license.
-
-.. |iuml| unicode:: 0xEF .. lowercase i with diaeresis
