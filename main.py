@@ -1,20 +1,19 @@
 import sort
 
 
-def loadFrom(filename):
-    with open(filename, 'r') as optionsFile:
-        return [option[:-1] for option in optionsFile if option not in ('', '\n')]
+def load_from(filename):
+    with open(filename, 'r') as options_file:
+        return [option[:-1] for option in options_file if option not in ('', '\n')]
 
 
-def writeResultTo(options, filename):
-    with open(filename, 'w') as outputFile:
-        outputFile.writelines([option + '\n' for option in options])
+def write_result_to(options, filename):
+    with open(filename, 'w') as output_file:
+        output_file.writelines([option + '\n' for option in options])
 
 
 if __name__ == '__main__':
-    options = loadFrom('options.txt')
+    options = load_from('options.txt')
     try:
         options = sort.mergesort(options)
     finally:
-        writeResultTo(options, 'result.txt')
-
+        write_result_to(options, 'result.txt')
