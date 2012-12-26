@@ -1,6 +1,7 @@
 '''
 getch module by Danny Yoo on ActiveState Code Recipes.
 http://code.activestate.com/recipes/134892/
+Included under the terms of the Python Software Foundation (PSF) license.
 '''
 
 
